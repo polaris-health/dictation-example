@@ -3,7 +3,7 @@ import callWithRetry from './callWithRetry';
 
 export default async function dictateObservation(formData, onDownloadProgress) {
     const token = 'your token here'; // Replace with your actual token
-    const endpoint = 'http://localhost:8080/api/v1/dictate-observation';
+    const endpoint = 'https://staging.corilus.cavell.app/api/v1/dictate-observation';
 
     const result = await callWithRetry(async () => {
         return await axios.post(
